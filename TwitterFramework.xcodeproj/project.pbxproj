@@ -10,6 +10,7 @@
 		9DEEC0F3252F411B00FDA4E9 /* TwitterFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEEC0E9252F411B00FDA4E9 /* TwitterFramework.framework */; };
 		9DEEC0F8252F411B00FDA4E9 /* TwitterFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEC0F7252F411B00FDA4E9 /* TwitterFrameworkTests.swift */; };
 		9DEEC0FA252F411B00FDA4E9 /* TwitterFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DEEC0EC252F411B00FDA4E9 /* TwitterFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DEEC104252F423000FDA4E9 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEC103252F423000FDA4E9 /* Twitter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9DEEC0F2252F411B00FDA4E9 /* TwitterFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEEC0F7252F411B00FDA4E9 /* TwitterFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterFrameworkTests.swift; sourceTree = "<group>"; };
 		9DEEC0F9252F411B00FDA4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DEEC103252F423000FDA4E9 /* Twitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				9DEEC0EC252F411B00FDA4E9 /* TwitterFramework.h */,
 				9DEEC0ED252F411B00FDA4E9 /* Info.plist */,
+				9DEEC103252F423000FDA4E9 /* Twitter.swift */,
 			);
 			path = TwitterFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					9DEEC0E8252F411B00FDA4E9 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					9DEEC0F1252F411B00FDA4E9 = {
 						CreatedOnToolsVersion = 11.6;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEEC104252F423000FDA4E9 /* Twitter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		9DEEC0FE252F411B00FDA4E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5D632VWN5D;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravid.TwitterFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		9DEEC0FF252F411B00FDA4E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5D632VWN5D;
@@ -388,6 +396,7 @@
 		9DEEC101252F411B00FDA4E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D632VWN5D;
 				INFOPLIST_FILE = TwitterFrameworkTests/Info.plist;
@@ -406,6 +415,7 @@
 		9DEEC102252F411B00FDA4E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D632VWN5D;
 				INFOPLIST_FILE = TwitterFrameworkTests/Info.plist;
